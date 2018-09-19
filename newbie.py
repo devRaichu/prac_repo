@@ -1,3 +1,5 @@
+import os
+
 #normal print
 print("Hello world\n")
 
@@ -70,3 +72,8 @@ print("!CHECK!")
 #main in python
 # if __name__ == '__main__':
 #   ....
+
+#get current location
+__location__ = os.path.realpath(
+            os.path.join(os.getcwd(), os.path.dirname(__file__)))
+print(__location__)

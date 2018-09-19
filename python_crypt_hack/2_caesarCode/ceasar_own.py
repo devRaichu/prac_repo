@@ -1,3 +1,5 @@
+import os
+
 def encrpyt(msg, num):
 
     #97~122 A~Z
@@ -23,12 +25,16 @@ def decrypt(msg, num):
 
 if __name__ == '__main__':
 
-    file = open('C:/Users/sleep/Desktop/prac/prac_repo/python_crypt_hack/2_caesarCode/plain.txt', 'rt')
+    #current dir
+    __location__ = os.path.realpath(
+            os.path.join(os.getcwd(), os.path.dirname(__file__)))
+
+    file = open(os.path.join(__location__,'plain.txt'), 'rt')
     text = file.read()
     file.close()
 
-    #ceaserNum = input("Enter Ceasar number : ")
-    ceaserNum = 1
+    #ceaserNum= int(input("Enter Ceasar number : "))
+    ceaserNum = 5
 
     ciper = encrpyt( text, ceaserNum )
     print("encrypt text : "+ciper)

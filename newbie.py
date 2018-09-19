@@ -64,3 +64,5 @@ print(len(str1))
 #print without newline ... end=' '
 print("There will be no new line", end = '')
 print("!CHECK!")
+
+#conditions

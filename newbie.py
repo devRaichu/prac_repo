@@ -77,3 +77,25 @@ print("!CHECK!")
 __location__ = os.path.realpath(
             os.path.join(os.getcwd(), os.path.dirname(__file__)))
 print(__location__)
+
+"""
+%s string
+%C one char
+%f float
+%d int
+%% '%'
+"""
+lang = 'python'
+text = 'I love %s' %lang
+print(text)
+
+a,b = 1,5
+text = '%d + %d = %d' %(a,b,a+b)
+print(text)
+
+# \ (enter) ... continue without newline
+# \\ ... '\' itself
+# \'  \'' ... ' or '' itself
+text = "dasdsa \
+dsdsds"
+print(text)

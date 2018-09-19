@@ -13,7 +13,7 @@ def makeCodeBook():
     return encbook, decbook
 
 if __name__ == '__main__':
-    h = open('C:/Users/sleep/Desktop/prac/prac_repo/codeBook/plain.txt', 'rt')
+    h = open('C:/Users/sleep/Desktop/prac/prac_repo/python_crypt_hack/1_codeBook/plain.txt', 'rt')
     text =h.read()
     h.close
 

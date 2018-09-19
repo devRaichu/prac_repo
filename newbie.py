@@ -66,3 +66,7 @@ print("There will be no new line", end = '')
 print("!CHECK!")
 
 #conditions
+
+#main in python
+# if __name__ == '__main__':
+#   ....

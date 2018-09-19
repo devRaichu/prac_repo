@@ -38,5 +38,9 @@ if __name__ == '__main__':
 
     ciper = encrpyt( text, ceaserNum )
     print("encrypt text : "+ciper)
+    f = open(os.path.join(__location__,'ciper.txt'), 'w')
+    f.write(ciper)
+    f.close()
+
     text = decrypt( ciper, ceaserNum)
     print("decrypt text : "+text)
